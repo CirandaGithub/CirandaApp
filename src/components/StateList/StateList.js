@@ -3,6 +3,7 @@
 // Notably used in any of the state selectors in AddRecycler, SearchPage
 
 export const states = [
+    { label: 'National', value: 'National'},
     { label: 'Alabama', value: 'AL' },
     { label: 'Alaska', value: 'AK' },
     { label: 'American Samoa', value: 'AS' },
