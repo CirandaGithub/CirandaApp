@@ -45,25 +45,15 @@ function LoginForm() {
   };
   const avatarStyle = { backgroundColor: "#1bbd7e" };
 
-  const autoFillEckhart = () => {
-    setUsername("Eckhart");
-    setPassword("123");
-  };
-
-  const handleAutoFillMatt = () => {
-    setUsername("Matt");
-    setPassword("123");
-  };
-
   return (
     <Grid>
       <Paper elevation={10} style={paperStyle}>
         <Grid align="center">
-          <Avatar onClick={autoFillEckhart}>
+          <Avatar >
             <LockOutlined />
           </Avatar>
         </Grid>
-        <h2 onClick={handleAutoFillMatt}>Welcome to Ciranda</h2>
+        <h2>Welcome to Ciranda</h2>
         <TextField
           label="Username"
           placeholder="Enter Username"

@@ -37,16 +37,10 @@ function RegisterForm() {
   };
   const avatarStyle = { backgroundColor: "#1bbd7e" };
 
-  const handleAutoFill = () => {
-    setUsername("Matt");
-    setEmail("matt@ciranda.com");
-    setPassword("123");
-  };
-
   return (
     <Grid>
       <Paper elevation={10} style={paperStyle}>
-        <h2 align="center" onClick={handleAutoFill}>
+        <h2 align="center" >
           Register New Administrator
         </h2>
         <TextField
