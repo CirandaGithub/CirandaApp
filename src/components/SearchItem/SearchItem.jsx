@@ -190,12 +190,6 @@ function SearchItem(props) {
     }
   };
 
-  const autoFillPresent = () => {
-    setName("Steve");
-    setCustomer("Eastside Co-op");
-    setEmail("inventory@eastside.com");
-    setComment(`Tried to call this company, but they're permanently closed.`);
-  };
 
   // Dialog for company feedback
   const [openFeedback, setOpenFeedback] = React.useState(false);
@@ -768,7 +762,7 @@ function SearchItem(props) {
         onClose={handleFeedbackClose}
         aria-labelledby="form-dialog-title"
       >
-        <DialogTitle id="form-dialog-title" onClick={autoFillPresent}>
+        <DialogTitle id="form-dialog-title" >
           Company Feedback
         </DialogTitle>
         <DialogContent>

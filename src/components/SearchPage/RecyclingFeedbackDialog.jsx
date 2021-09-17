@@ -44,22 +44,13 @@ function RecyclingFeedbackDialog(props) {
     }
   };
 
-  const handleAutoFill = () => {
-    setName("Steve");
-    setCompany("Eastside Co-op");
-    setEmail("inventory@eastside.com");
-    setComment(
-      "I recycled 200lbs of cardboard last week.  The company even picked it up for me!"
-    );
-  };
-
   return (
     <Dialog
       open={props.recycleFeedbackDialogOpen}
       onClose={props.closeRecyclingDialog}
       aria-labelledby="form-dialog-title"
     >
-      <DialogTitle id="form-dialog-title" onClick={handleAutoFill}>
+      <DialogTitle id="form-dialog-title">
         Recycling Feedback
       </DialogTitle>
       <DialogContent>
